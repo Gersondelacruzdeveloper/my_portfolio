@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+	<title>Gerson</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1" />
+	<link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Russo+One&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/navbar.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/index.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/footer.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/contact.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/resume.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/posts.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/post_form.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/login.css' %}">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+</head>
+<body>
+  {% include 'includes/navbar.html' %}
+	{% block content %}
+	<!-- Content goes here -->
+	{% endblock content %}
+ {% include 'includes/footer.html' %}
+  <script type="text/javascript" src="{% static 'js/script.js' %}"></script>
+</body>
+</html>

@@ -1,0 +1,275 @@
+.contact_wrapper{
+clear:both;
+overflow:hidden;
+margin-bottom:150px;
+}
+
+.contact_form{
+width:439px;
+float:right;
+margin-right:260px;
+margin-top:78px;
+}
+
+.contact_word{
+font-size:80px;
+font-family:"noticia text", serif;
+color:#817c7c;
+float:left;
+margin-left:300px;
+}
+
+.contact_form p{
+color:#817c7c;
+}
+.contact_form .input-field[type=text], .input-field[type=email]{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 2px 0;
+  box-sizing: border-box;
+  color:white;
+  background-color:#f62350;
+  font-family:"open sans", sans-serif;
+  font-size:15px;
+  height:12px;
+  border: none;
+}
+
+.contact_form textarea {
+  width: 100%;
+  height:135px;
+  padding: 5px 19px;
+  margin: 2px 0;
+  box-sizing: border-box;
+  color:white;
+  background-color:#f62350;
+  font-family:"open sans", sans-serif;
+  font-size:15px;
+  resize: none;
+ border: none;
+}
+
+.contact_form input[type=text]:hover, input[type=email]:hover, textarea:hover{
+border:1px solid black;
+}
+
+
+textarea::placeholder{
+   color: white;
+   font-family:"open sans", sans-serif;
+   font-size:15px;
+
+}
+
+::placeholder{
+   color: white;
+   font-family:"open sans", sans-serif;
+   font-size:15px;
+}
+
+
+.form_btn{
+float:right;
+border: none;
+font-size:14px;
+color:#817c7c;
+}
+
+.form_btn:hover{
+color:rgb(97, 208, 212)
+}
+
+.social_media{
+clear:both;
+width:300px;
+left:300px;
+top:410px;
+position:absolute;
+}
+.social_media2{
+display:none;
+
+}
+.social_media i{
+font-size:15px;
+width:30px;
+height:30px;
+border-radius:50%;
+background-color:black;
+line-height: 30px;
+text-align:center;
+color:#f0eeec;
+}
+
+.email{
+margin-top:-15px;
+font-size:13px;
+}
+.cell{
+font-size:13px;
+margin-top:10px;
+}
+.color_p{
+color:#817c7c;
+}
+
+
+.social_media #whatsapp:hover{
+  -ms-transform: scale(1.1); /* IE 9 */
+  -webkit-transform: scale(1.1); /* Safari 3-8 */
+  transform: scale(1.9);
+ background-color:rgb(0, 150, 136)
+}
+
+.social_media #facebook:hover{
+  -ms-transform: scale(1.1); /* IE 9 */
+  -webkit-transform: scale(1.1); /* Safari 3-8 */
+  transform: scale(1.9);
+ background-color: #3b5998;
+}
+
+.social_media #instagram:hover{
+  -ms-transform: scale(1.1); /* IE 9 */
+  -webkit-transform: scale(1.1); /* Safari 3-8 */
+  transform: scale(1.9);
+ background:linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+}
+
+
+@media only screen and (max-width:750px){
+
+.contact_word{
+font-size:44px;
+font-family:"noticia text", serif;
+color:#817c7c;
+float:none;
+margin:auto;
+margin-top:10px;
+padding-left:15px;
+}
+
+.social_media{
+display:none;
+}
+
+.social_media2{
+display:block;
+margin-top:20px;
+padding-left:15px;
+}
+
+.social_media2 i{
+font-size:15px;
+width:30px;
+height:30px;
+border-radius:50%;
+background-color:black;
+line-height: 30px;
+text-align:center;
+color:#f0eeec;
+}
+
+.contact_form{
+width:345px;
+float:none;
+margin:29px auto;
+overflow:hidden;
+}
+
+.form_btn{
+float:right;
+border: none;
+font-size:14px;
+color:black;
+font-weight:bold;
+}
+
+.contact_form input[type=text], input[type=email]{
+  height:42px;
+}
+
+
+
+
+}
+
+
+/* other responsive for iphone plus */
+
+@media only screen and (max-width:740px){
+.contact_wrapper{
+clear:both;
+overflow:hidden;
+margin-bottom:2px;
+}
+
+.contact_word{
+padding-left:33px;
+}
+
+
+.social_media2{
+padding-left:33px;
+}
+
+.contact_form{
+width:85%;
+float:none;
+margin:29px auto;
+overflow:hidden;
+}
+
+.contact_form .input-field[type=text], .input-field[type=email]{
+  width: 100%;
+  padding: 22px 20px;
+  margin: 2px 0;
+  box-sizing: border-box;
+  color:white;
+  background-color:#f62350;
+  font-family:"open sans", sans-serif;
+  font-size:15px;
+  height:12px;
+  border: none;
+}
+
+
+.contact_form textarea {
+  width: 100%;
+  height:150px;
+  padding: 5px 19px;
+  margin: 2px 0;
+  box-sizing: border-box;
+  color:white;
+  background-color:#f62350;
+  font-family:"open sans", sans-serif;
+  font-size:15px;
+  resize: none;
+ border: none;
+}
+
+
+.social_media2 #whatsapp:hover{
+  -ms-transform: scale(1.1); /* IE 9 */
+  -webkit-transform: scale(1.1); /* Safari 3-8 */
+  transform: scale(1.9);
+ background-color:rgb(0, 150, 136)
+}
+
+.social_media2 #facebook:hover{
+  -ms-transform: scale(1.1); /* IE 9 */
+  -webkit-transform: scale(1.1); /* Safari 3-8 */
+  transform: scale(1.9);
+ background-color: #3b5998;
+}
+
+.social_media2 #instagram:hover{
+  -ms-transform: scale(1.1); /* IE 9 */
+  -webkit-transform: scale(1.1); /* Safari 3-8 */
+  transform: scale(1.9);
+ background:linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+}
+
+
+
+
+}

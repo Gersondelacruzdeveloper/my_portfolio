@@ -1,0 +1,206 @@
+
+.nav-wrapper{
+margin-left:300px;
+overflow:hidden;
+}
+.menu_bar{
+display:none;
+
+}
+
+.greeting-wrapper{
+float:left;
+}
+.name{
+font-size:43px;
+font-weight:bold;
+ color:#817c7c;
+ font-family:"noticia text", serif;
+}
+.name_title{
+font-size:18px;
+margin-top:-25px;
+margin-left:5px;
+ color:#817c7c;
+ font-family:"noticia text", serif;
+}
+
+
+.navigation{
+float:left
+}
+
+.navigation ul{
+list-style-type: none;
+margin-top:85px;
+font-family:"noticia text", serif;
+cursor:pointer;
+}
+
+.navigation li{
+display:inline-block;
+padding:10px;
+}
+
+.navigation a:link {
+  text-decoration: none;
+}
+
+.navigation a {
+ color:grey;
+ font-weight:bold;
+}
+
+
+.navigation a:hover {
+ color:#00b3b3;
+}
+
+.navigation .active_1{
+ color:#00b3b3;
+}
+
+
+.overlay-content hr{
+display:none;
+}
+
+
+
+/* responsive design */
+@media only screen and (max-width:800px) {
+.nav-wrapper{
+margin-left:0px;
+overflow:hidden;
+}
+
+.menu_bar{
+display:block;
+background-color:#2d2d2d;
+float:right;
+border-radius:2px 2px 2px 2px;
+margin:15px;
+margin-top:32px;
+}
+
+.menu{
+font-size:30px;
+color:white;
+margin:10px;
+}
+.greeting-wrapper{
+float:left;
+}
+
+.name{
+font-size:30px;
+font-weight:bold;
+ color:#817c7c;
+ font-family:"noticia text", serif;
+ width:260px;
+ margin-left:15px;
+}
+
+
+.name_title{
+font-size:17px;
+margin-top:-25px;
+margin-left:0px;
+ color:#817c7c;
+ font-family:"noticia text", serif;
+ margin-left:15px;
+}
+
+
+/* menu slide down from the top*/
+.navigation {
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #2d2d2b;
+  overflow-y: hidden;
+  transition: 0.5s;
+}
+
+.navigation a {
+ color:white;
+ font-weight:bold;
+}
+
+
+.overlay-content{
+overflow:hidden;
+text-alig:center;
+width:100%;
+padding:0;
+cursor:pointer;
+}
+
+.overlay-content li{
+display: block;
+text-align:center;
+}
+
+.overlay-content hr{
+display:block;
+width:50%;
+color:white;
+border:1px solid white;
+margin:auto;
+}
+
+
+
+}
+
+
+
+/* for iphone plus */
+@media only screen and (max-width:500px){
+
+.nav-wrapper{
+margin-left:17px;
+overflow:hidden;
+}
+
+
+}
+
+/* samsum s8*/
+
+@media only screen and (max-width:360px){
+
+.nav-wrapper{
+margin-left:17px;
+margin:auto;
+}
+
+
+.greeting-wrapper{
+float:left;
+width: 262px;
+margin-left:17px;
+}
+
+.overlay-content hr{
+display:block;
+width:50%;
+color:white;
+border:1px solid white;
+margin:auto;
+
+}
+
+
+.name{
+font-size:30px;
+font-weight:bold;
+ color:#817c7c;
+ font-family:"noticia text", serif;
+}
+
+
+}

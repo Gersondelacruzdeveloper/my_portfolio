@@ -1,0 +1,124 @@
+{% extends 'gerson/main.html' %}
+{% load static %}
+
+{% block content %}
+
+<section class="resume_wrapper">
+
+
+<h1 class="resume_word">Resume</h1> <hr class="resume_line">
+
+    <div class="work_experiences_container">
+      <div class="resume_circle">
+    <p> Info </p>
+    </div>
+            <div class="p_wrapper">
+            <p class="first_text">
+            My name is Gerson De La Cruz, I am a South Wales-based Freelancer.
+           I work remotely on projects for clients all over the world.
+           I enjoy building everything from small business sites to rich interactive web apps.
+           If you are a business seeking a web presence or an employer looking to hire, you can get in touch with me here </p>
+            </div>
+
+   </div><hr class="resume_line">
+
+
+     <div class="work_experiences_container">
+
+      <div class="resume_circle">
+    <p>Work</p>
+    </div>
+
+        <div class="p_h_wrapper">
+            <h6 class="title_text">Freelancing</h6>
+            <h6 class="second_title">2020 - present</h6>
+            <p class="text">
+             I spend my time designing experiences for mobile and web applications, creating helpful illustrations,
+                and writing design code to bring my work to life.
+            </p>
+        </div>
+
+   </div><hr class="resume_line">
+
+    <div class="work_experiences_container">
+
+      <div class="resume_circle">
+    <p>Education</p>
+    </div>
+
+    <div class="p_h_wrapper">
+            <h6 class="title_text">Complete Web Developer Course 2.0 </h6>
+            <h6 class="second_title">March 28, 2020 </h6>
+            <p class="text">
+                During this course I developed my skills by building 25 websites and mobile apps using HTML, CSS, Javascript, PHP,
+                Python, MySQL, jQuery,Bootstrap,and the use of APIs.
+            </p>
+
+            <h6 class="title_text">Python Crash course Book</h6>
+            <h6 class="second_title">June 29, 2020 </h6>
+            <p class="text">
+                 Python Crash course is a hands-on and  Project-base.
+            </p>
+
+
+              <h6 class="title_text">
+                  Django for Professionals<br>
+                  Django for APIs<br>
+                  Django for Beginners
+              </h6>
+            <h6 class="second_title">November 28, 2020</h6>
+            <p class="text">
+                Project-based approach to learning web development with the Django web framework.
+            </p>
+        </div>
+
+   </div>
+
+<div class="aside_wrapper">
+    <div class="aside_container">
+
+        <div class="aside_circle">
+        <i class="fas fa-exclamation skills"></i>
+        </div>
+        <div class="skill_list">
+        <p>Skills</p><hr class="aside_line">
+        <div class="p">
+        <p>PHOTOSHOP</p>
+        <p>FLASH</p>
+        <p>APIs</p>
+        <p>Django</p>
+        <p>Bootstrap</p>
+            <p>Git and Github</p>
+            <p>Docker</p>
+            <p>PostgreSQL</p>
+            <p>AWS</p>
+        </div>
+        </div>
+      </div>
+
+ <div class="aside_container2">
+        <div class="aside_circle">
+        <i class="fas fa-globe languages"></i>
+        </div>
+        <div class="skill_list">
+        <p>Languages</p><hr class="aside_line">
+        <div class="p">
+        <p>HTML</p>
+        <p>CSS</p>
+        <p>PHP</p>
+        <p>Python</p>
+            <p>SQL</p>
+            <p>Javascript</p>
+             <p>jQuery</p>
+        </div>
+        </div>
+      </div>
+</div>
+
+    <div class="pdf">
+       <a href="{% static 'images/resume.pdf' %}"><span><img src="{% static 'images/pdf.png' %}"  width="50px" height="60px"></span></a>
+        <span class="resume_download"><a href="{% static 'images/resume.pdf' %}">Download Resume</a></span>
+    </div>
+
+</section>
+{% endblock content %}

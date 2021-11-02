@@ -1,0 +1,44 @@
+
+{% extends 'gerson/main.html' %}
+{% load static %}
+
+	{% block content %}
+  <section>
+ <div class="index_wrapper">
+
+     <div class="photo_hello_wrapper">
+         <div class="main_photo">
+              <img id="profile_pic" src="{% static 'images/gerson.jpg' %}">
+         </div>
+
+
+         <div class="hello_wrapper">
+            <h1 class="hello">Hello,</h1>
+           <h1 class="about_me">a bit about me:</h1>
+        </div>
+
+     </div>
+
+     <div class="circle_wrapper">
+    <a href="{% url 'contact' %}"><div class="circle red"> MY CONTACT </div></a>
+    <a href="{% url 'resume' %}"><div class="circle green_cyan">MY RESUME</div></a>
+   <a href="{% url 'posts' %}"> <div class="circle yellow">MY WORK</div></a>
+     </div>
+
+
+
+        <div class="main_photo2">
+              <img id="profile_pic" src="{% static 'images/gerson.jpg' %}">
+         </div>
+
+
+       <p class="paragraph" >My name is Gerson De La Cruz, I am a South Wales-based Freelancer.
+           I work remotely on projects for clients all over the world.
+           I enjoy building everything from small business sites to rich interactive web apps.
+           If you are a business seeking a web presence or an employer looking to hire, you can get in touch with me here
+</p>
+
+
+ </div>
+  </section>
+{% endblock content %}

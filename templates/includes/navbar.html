@@ -1,0 +1,44 @@
+{% load static %}
+<header>
+<div class="nav-wrapper">
+
+	       <div class="greeting-wrapper">
+				<p class="name">Gerson De La Cruz</p>
+				<p class="name_title">Fullstack developer</p>
+			</div>
+
+	  <div class="menu_bar"><i class="fas fa-bars menu" onclick="openNav()" ></i></div>
+
+     <div class="navigation" id="navigation">
+		 <div class="menu_bar"><i class="fas fa-times menu" onclick="closeNav()" ></i></div>
+         <ul class="overlay-content">
+		{% if request.user.is_authenticated %}
+			<li><a class="active_1" href="{% url 'home' %}">HOME</a></li><hr>
+		    <li><a href="{% url 'contact' %}">CONTACT</a></li><hr>
+			 <li><a href="{% url 'resume' %}">RESUME</a></li><hr>
+			 <li><a href="{% url 'posts' %}">PROJECTS</a></li><hr>
+			 <li><a href="{% url 'logout' %}">LOGOUT</a></li><hr>
+		{% else %}
+		  <li><a class="active_1" href="{% url 'account' %}">HOME</a></li><hr>
+		  <li><a href="{% url 'contact' %}">CONTACT</a></li><hr>
+		  <li><a href="{% url 'resume' %}">RESUME</a></li><hr>
+			 <li><a href="{% url 'posts' %}">PROJECTS</a></li><hr>
+			<li><a href="{% url 'login' %}">LOGIN</a></li><hr>
+		{% endif %}
+	      </ul>
+	</div>
+
+
+</div>
+</header>
+
+
+<script>
+function openNav() {
+  document.getElementById("navigation").style.height = "100%";
+}
+
+function closeNav() {
+  document.getElementById("navigation").style.height = "0%";
+}
+</script>
