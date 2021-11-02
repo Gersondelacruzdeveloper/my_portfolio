@@ -1,4 +1,4 @@
-#Welcome to my portfolio
+ # Welcome to my portfolio
 
 [View my live portfolio here.](http://www.gersondelacruz.com/)
 
